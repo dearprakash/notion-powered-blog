@@ -103,3 +103,21 @@
     background-color: rgb(15, 8, 28);
   }
 }
+
+.blockquote {
+  margin: 10;
+}
+
+.blockquote p {
+  padding: 15px;
+  background: rgb(110, 32, 32);
+  border-radius: 5px;
+}
+
+.blockquote p::before {
+  content: '\201C';
+}
+
+.blockquote p::after {
+  content: '\201D';
+}

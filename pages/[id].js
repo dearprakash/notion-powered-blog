@@ -102,7 +102,15 @@ const renderBlock = (block) => {
     case "divider":
       return <hr key={id} />;
     case "quote":
-      return <blockquote key={id}>{value.text[0].plain_text}</blockquote>;
+      return <div>
+        <hr></hr>
+      <blockquote key={id} class="text-xl italic font-semibold text-gray-900 dark:text-white">
+          <p>
+            {value.text[0].plain_text}
+          </p>
+        </blockquote>
+        </div>
+      // return <blockquote key={id}>{value.text[0].plain_text}</blockquote>;
     case "code":
       return (
         <pre className={styles.pre}>
